@@ -93,10 +93,10 @@ A run of the code should look as follows (of course, the game is random, so othe
 Player 1:\\
 The player chose scissors.\\
 Player 2:\\
-The player chose rocks.\\
+The player chose rock.\\
 Player 2 won.}
 
-A skeleton of the code is already given for you in a file here, and in CodeSkulptor here. You only need to fill in the commented parts.
+A skeleton of the code is already given for you in the file \href{https://github.com/BasicProbability/Programming2018/blob/master/weekly%20tasks/week%201/homework/code/start_code.py}{here}. Copy-paste the code into \href{http://py3.codeskulptor.org/}{CodeSkulptor} and work on your code. You only need to fill in the commented parts.
 
 \section{Grading}
 This section tells you what to look out for when programming. It also tells you how you should grade the assignment. In general, whenever you grade 
@@ -109,11 +109,11 @@ As a general rule, if you the program cannot perform one of the tasks below beca
 \enlargethispage{1cm}
 
 \begin{itemize}
-    \item[2 points]	The function \texttt{who\_won} works correctly according to the rules of the game (i.e., the function outputs 1 when it receives values 0 and 2, it outputs 0 when it receives values 1 and 1, it outputs 2 if it receives values 0 and 1 etc.) You can check this by checking all possibilities in the code and by inspecting the code.
+    \item[2 points]	The function \texttt{who\_won} works correctly according to the rules of the game (i.e., the function outputs 1 when it receives values 0 and 2, it outputs 0 when it receives values 1 and 1, it outputs 2 if it receives values 0 and 1 etc.) You can check this by manually testing all possibile combinations in the code and by inspecting the code.
     \item[2 points] The function \texttt{what\_was\_played} works correctly -- it prints \textit{The player chose rock} if it receives value 0 etc.
 \item[1 point] The computer randomly chooses an integer 0, 1 or 2 for player 1. This can be checked by running the code many times and/or inspecting the code.
 \item[1 point] The computer randomly chooses an integer 0, 1 or 2 for player 2. This can be checked by running the code many times and/or inspecting the code.
-\item[2 points] The computer correctly prints what each player chose, using the function \texttt{what\_was\_played}.
+\item[2 points] In one run of the game, the computer correctly prints what each player chose, using the function \texttt{what\_was\_played}.
 \item[2 points] The program uses the function \texttt{who\_won} to determine the winner. It then correctly prints who the winner was (player 1 or player 2, or neither in case of a tie).
 \end{itemize}
 
