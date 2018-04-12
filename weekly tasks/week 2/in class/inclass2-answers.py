@@ -49,6 +49,7 @@ print(DECK == DECK2)
 #4. Test the length of DECK and DECK2. It should consist of 52 elements.
 
 print(len(DECK))
+print(len(DECK2))
 
 #5. Create a function, called create_deck, which takes two
 #arguments, ranks and suits and creates a deck of cards, assigned to
@@ -105,10 +106,25 @@ print("*********")
 #documentation to see what the method does.
 
 def check_rank(hand):
-    hand_ranks = [i[0] if len(i) == 2 else i[:2] for i in hand] #this creates a hand consisting of only ranks; the if-statement takes care of 10
+    #the following line keeps only information about ranks in hand
+    hand_ranks = [i[0] if len(i) == 2 else i[:2] for i in hand]
     count_rank = {}
     for i in hand_ranks:
-        count_rank = 
+        if i in count_rank:
+            count_rank[i] += 1 #increase count if the rank is present
+        else:
+            count_rank[i] = 1 #start count if the rank is not yet present
+    return count_rank
+
+#Note: I thought it might be easier for some of you to loop
+#through all RANKS and count instances in the hand; the code for
+#this alternative is given below
+def check_rank(hand):
+    hand_ranks = [i[0] if len(i) == 2 else i[:2] for i in hand]
+    count_rank = {}
+    for i in RANKS:
+        if hand_ranks.count(i): 
+            count_rank[i] = hand_ranks.count(i)
     return count_rank
 
 #10. Check that the function works by running a few random draws and
@@ -143,13 +159,15 @@ print(check_rank(my_hand))
 
 success = 0
 
-for _ in range(100000):
+runs = 100000
+
+for _ in range(runs):
     my_hand = deal_hand(RANKS, SUITS)
-    vals = list(check_rank(my_hand).values())
-    if max(vals) == 2 and vals.count(2) == 1:
+    vals = check_rank(my_hand)
+    if len(vals) == 4:
         success = success + 1
 
-print("Probability of exactly one pair", success/100000)
+print("Probability of exactly one pair", success/runs)
 
 #12. What is the probability of getting a full house (three of a kind
 #and a pair)? You can compare your simulation to the answer given on
@@ -157,13 +175,13 @@ print("Probability of exactly one pair", success/100000)
 
 success = 0
 
-for _ in range(100000):
+for _ in range(runs):
     my_hand = deal_hand(RANKS, SUITS)
     vals = list(check_rank(my_hand).values())
     if max(vals) == 3 and 2 in vals:
         success = success + 1
 
-print("Probability of a full house", success/100000)
+print("Probability of a full house", success/runs)
 
 #13. So far, we considered cases that are not that difficult to solve
 #analytically. But consider the following one:
@@ -189,10 +207,10 @@ def deal_hand_mod(ranks, suits):
 
 success = 0
 
-for _ in range(100000):
+for _ in range(runs):
     my_hand = deal_hand_mod(RANKS, SUITS)
     vals = list(check_rank(my_hand).values())
     if max(vals) == 3 and 2 in vals:
         success = success + 1
 
-print("Probability of a full house in cheating", success/100000)
+print("Probability of a full house in cheating", success/runs)
