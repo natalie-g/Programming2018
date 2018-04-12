@@ -109,7 +109,7 @@ of characters that is divided from other words by white spaces.
 
 \begin{itemize}
 \item[1 point] When the program starts it asks the user for a path to a file (including the file name). It is ok for the program to crash if this path does not exist.
-\item[2 points] The program reads the text file only once and stores all relevant information before proceeding to the functions.Depending on your computer, reading a file can take several seconds.
+\item[2 points] The program reads the text file only once and stores all relevant information in a dictionary. The functions find\_frequent\_words, find\_word do not operate on the file, only on the dictionary created from the file. Depending on your computer, reading a file can take several seconds.
 \item[1 point] The program generates a dictionary using the function collect\_frequencies, with words as keys and integers as values.
 \item[2 points] The program prints the number $n$ of most frequent words to the screen as a list in which each line looks as follows (1 point):
 $$ word~~~wordCount $$
