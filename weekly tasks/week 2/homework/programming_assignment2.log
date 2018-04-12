@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.25)  9 APR 2018 22:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.25)  12 APR 2018 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,13 +1029,17 @@ Requested font "[lmmono10-regular]" at 10.95pt
  [1
 
 ]
+Overfull \hbox (43.50687pt too wide) in paragraph at lines 100--101
+[]\EU1/Alegreya(0)/m/n/10.95 The fourth function, print_lists, which prints the
+ output of find_frequent_words
+ []
+
 Requested font "cmmi10" at 10.95pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 Requested font "cmsy10" at 10.95pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 107.
-
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 115.
 
