@@ -5,6 +5,7 @@ The comments (marked by #) explain what you should do. Type your code below each
 """
 
 import random
+import collections
 
 #In this set of exercises, we will practice working with strings and
 #iterables. We will also practice working with random sampling.
@@ -108,6 +109,7 @@ print("*********")
 def check_rank(hand):
     #the following line keeps only information about ranks in hand
     hand_ranks = [i[0] if len(i) == 2 else i[:2] for i in hand]
+    #if statement is there to keep two letters in case of '10'
     count_rank = {}
     for i in hand_ranks:
         if i in count_rank:
@@ -125,6 +127,17 @@ def check_rank(hand):
     for i in RANKS:
         if hand_ranks.count(i): 
             count_rank[i] = hand_ranks.count(i)
+    return count_rank
+
+#There is another solution, which would probably be the most 
+#straightforward one for Python users; it involves counters, which
+#are dictionaries used for incremental (one by one) counting
+
+def check_rank(hand):
+    hand_ranks = [i[0] if len(i) == 2 else i[:2] for i in hand]
+    count_rank = collections.Counter(hand_ranks) #this creates a counter
+    #counters are dictionaries; you can supply a list to them
+    #they will count all instances in the list
     return count_rank
 
 #10. Check that the function works by running a few random draws and
