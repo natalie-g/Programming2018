@@ -53,6 +53,6 @@ def print_lists(list1, list2):
 
 collected_frequencies = collect_frequencies(textFile)
 freq1, freq2 = find_frequent_words(collected_frequencies) #we assign the output, list1 and list2 to variables freq1 and freq2, respectively
-word_freq1, word_freq2 = find_word(collect_frequencies) #we assign the output, list1 and list2 to variables word_freq1 and word_freq2, respectively
+word_freq1, word_freq2 = find_word(collected_frequencies) #we assign the output, list1 and list2 to variables word_freq1 and word_freq2, respectively
 print_lists(freq1, freq2)
 print_lists(word_freq1, word_freq2)
