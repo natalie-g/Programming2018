@@ -13,7 +13,7 @@ def collect_frequencies(nameoffile):
     """
     Using nameoffile, the function returns frequency counts of every word in the file called nameoffile. What is returned can be a dictionary or a Counter.
     """
-    with open(textFile) as text:
+    with open(nameoffile) as text:
         for line in text:
             pass
             #your first task is to substitute pass with a real code. You have to split line into words using white spaces, lower its characters. Then, it has to count all the words just found, creating one dictionary with frequencies stored. The dictionary is then outputed. For example, if the text was this:
