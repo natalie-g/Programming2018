@@ -52,15 +52,15 @@ for sentence in test:
     print(sentence)
     print("*********")
 
-#3. Create a function, update_bigrams, that gets two arguments: bigram_dict (a
+#3. Create a function, update_bigrams, that gets two arguments: dict_to_update (a
 #dictionary), and a sentence (a list). It updates the dictionary with the
 #sentence as follows: for every sequence of words a b, it takes a as the key in
 #the dictionary and updates the counter that is the value of the key a by 1 wrt
-#the word b. The function returns the updated dictionary.
+#the word b. This a void function (nothing is returned).
 
-def update_bigrams(bigram_dict, sentence):
+def update_bigrams(dict_to_update, sentence):
     """
-    bigram_dict: dictionary
+    dict_to_update: dictionary
     sentence: list
 
     Return bigram_dict updated with bigrams in the sentence. The prefix is the
@@ -93,13 +93,12 @@ print(bigram_dict == {'it,': Counter({'nothing': 1}), 'boy': Counter({'kissed':
 #but it allows a sequence of any number of words to appear as the prefix. How
 #many words should be used is given in prefix.
 
-def update_ngrams(ngram_dict, sentence, prefix=1):
+def update_ngrams(dict_to_update, sentence, prefix=1):
     """
-    ngram_dict: dictionary
+    dict_to_update: dictionary
     sentence: list
 
-    Return ngram_dict updated with bigrams in the sentence. The prefix is the
-    key in ngram_dict, values are encoded as Counter.
+    The prefix encodes how many words should be used as keys in the dictionary.
     """
     pass
 
