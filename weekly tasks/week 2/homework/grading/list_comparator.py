@@ -5,7 +5,7 @@ The imported file code is the file that the student created.
 '''
 
 import sys
-import code
+import tested_file as code #or whatever the name of the file is that you are grading
 
 def main():
     
