@@ -264,10 +264,12 @@ for _ in range(15):
         target_words = (target_words[1],
             select_word(ngram_prob_trigram[target_words]))
     else:
-        try:
+        #if two words are not as prefix in trigram, we'll switch to bigram
+        if target_words[1] in ngram_prob:
             target_words = (target_words[1],
             select_word(ngram_prob[(target_words[1], )]))
-        except KeyError:
-            break
+        else:
+            break #if preceding words are not found, break (this happens when
+        #you get to a word which was only used at the end of line)
     print(target_words[0])
 
