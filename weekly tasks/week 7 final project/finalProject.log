@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.25)  18 MAY 2018 17:29
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.25)  18 MAY 2018 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**finalProject.tex
+**finalProject
 (./finalProject.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
@@ -1106,7 +1106,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Requested font "[lmmono10-regular]" at 10.95pt
  -> /usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--100
+Underfull \hbox (badness 10000) in paragraph at lines 93--102
 
  []
 
@@ -1124,13 +1124,13 @@ Requested font "msam10" at 10.95pt
 Requested font "msbm10" at 10.95pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 LaTeX Font Info:    Font shape `EU1/Alegreya(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 129.
+(Font)              scaled to size 9.0pt on input line 131.
 Requested font "[Alegreya-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex
 -text;mapping=tex-text;+pnum;+lnum;" at 9.0pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/huerta/alegreya/Alegreya-Regul
 ar.ttf
 LaTeX Font Info:    Font shape `EU1/Alegreya(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 129.
+(Font)              scaled to size 5.0pt on input line 131.
 Requested font "[Alegreya-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex
 -text;mapping=tex-text;+pnum;+lnum;" at 5.0pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/huerta/alegreya/Alegreya-Regul
@@ -1157,50 +1157,51 @@ Requested font "cmr9" at 9.0pt
 File: plot.pdf Graphic file (type QTm)
  <use  "plot.pdf" > [3]
 LaTeX Font Info:    Font shape `EU1/Alegreya(0)/bx/n' will be
-(Font)              scaled to size 10.95pt on input line 181.
+(Font)              scaled to size 10.95pt on input line 183.
 Requested font "[Alegreya-Bold.ttf]/OT:script=latn;language=DFLT;mapping=tex-te
 xt;mapping=tex-text;+pnum;+lnum;" at 10.95pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/huerta/alegreya/Alegreya-Bold.
 ttf
 LaTeX Font Info:    Font shape `EU1/Alegreya(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 188.
+(Font)              scaled to size 10.95pt on input line 190.
 Requested font "[Alegreya-Italic.ttf]/OT:script=latn;language=DFLT;mapping=tex-
 text;mapping=tex-text;+pnum;+lnum;" at 10.95pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/huerta/alegreya/Alegreya-Itali
 c.ttf
 LaTeX Font Info:    Font shape `EU1/Alegreya(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 193.
+(Font)              scaled to size 9.0pt on input line 195.
 Requested font "[Alegreya-Italic.ttf]/OT:script=latn;language=DFLT;mapping=tex-
 text;mapping=tex-text;+pnum;+lnum;" at 9.0pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/huerta/alegreya/Alegreya-Itali
 c.ttf
  [4]
-Overfull \hbox (1.36829pt too wide) in paragraph at lines 226--229
+Overfull \hbox (1.36829pt too wide) in paragraph at lines 228--231
 \EU1/Alegreya(0)/m/n/10.95 Learning a linear regression model can be done with 
 the technique of least squares.
  []
 
 [5]
-Overfull \hbox (1.28442pt too wide) in paragraph at lines 274--279
+Overfull \hbox (1.28442pt too wide) in paragraph at lines 276--281
 \EU1/Alegreya(0)/m/n/10.95 Are all points outlined in Section [][]9[][] of the 
 [][]project description[][] addressed prop-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
  (./finalProject.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 286.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 286.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
  21900 strings out of 493638
  394743 string characters out of 6146796
- 403969 words of memory out of 5000000
+ 402969 words of memory out of 5000000
  25118 multiletter control sequences out of 15000+600000
  12623 words of font info for 78 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 54i,8n,64p,10378b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,8n,64p,10374b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on finalProject.pdf (6 pages).
+Output written on finalProject.pdf (7 pages).

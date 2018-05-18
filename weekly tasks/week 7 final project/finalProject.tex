@@ -97,14 +97,16 @@ from sklearn import datasets\\[1em]
 boston = datasets.load\_boston()\\[1em]
 \# Create features variable matrix\\
 features = boston.data\\[1em]
+\# Collect the target variable (MEDV)\\
+target = boston.target\\[1em]
 
-Note that in this matrix, each row is one case, and each case consists of 14 values. The interpretation of each value is \href{http://www.cs.toronto.edu/\%7Edelve/data/boston/bostonDetail.html}{here}. Predictions will be about the MEDV values (the last value in each case).
+Note that in this matrix, each row is one case, and each case has 13 features. The interpretation of each value can be accessed by boston.DESCR. Predictions will be about the MEDV values (in target).
 
 \section{Linear Regression}
 To familiarise yourself with linear regression and its implementation, watch the
 videos of Sections 1.2--1.3 and 2.1 (you can skip 2.1.5) of \href{https://www.youtube.com/watch?v=n1qyTXRdWQg&index=5&list=PL0Smm0jPm9WcCsYvbhPCdizqNKps69W4Z}{Andrew Ng's machine
 learning course}. You can also sign up for \href{https://www.coursera.org/learn/machine-learning/home}{it on coursera} to see them
-in higher resolution. To get more familiar with linear algebra, you should check Section 1.4. His explanations are great, but he does not really touch on the math of linear regression.
+in higher resolution. To get more familiar with linear algebra, you should check Section 1.4. Here, we will only shortly highlit the math of linear regression.
 
 From a probabilistic view point, we assume that our data are independently distributed. This is a weaker
 assumption than we have made so far because we do not assume that the distributions of our data points
