@@ -100,7 +100,7 @@ features = boston.data\\[1em]
 \# Collect the target variable (MEDV)\\
 target = boston.target\\[1em]
 
-Note that in this matrix, each row is one case, and each case has 13 features. The interpretation of each value can be accessed by boston.DESCR. Predictions will be about the MEDV values (in target).
+In the features matrix, each row is one case. That is, each row represents information about one house. Each case has 13 features. The interpretation of each feature can be accessed by boston.DESCR. The values to be predicted (the median price of each house) are stored per case in target. For each case, you should try to combine the features you choose as predictors of the corresponding value in the target.
 
 \section{Linear Regression}
 To familiarise yourself with linear regression and its implementation, watch the
