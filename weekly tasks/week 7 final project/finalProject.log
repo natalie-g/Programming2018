@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.25)  18 MAY 2018 17:21
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.8.25)  18 MAY 2018 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**finalProject
+**finalProject.tex
 (./finalProject.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
@@ -1181,18 +1181,18 @@ the technique of least squares.
  []
 
 [5]
-Overfull \hbox (1.28442pt too wide) in paragraph at lines 275--280
+Overfull \hbox (1.28442pt too wide) in paragraph at lines 274--279
 \EU1/Alegreya(0)/m/n/10.95 Are all points outlined in Section [][]9[][] of the 
 [][]project description[][] addressed prop-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
  (./finalProject.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 287.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 287.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 286.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 286.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
  ) 
 Here is how much of TeX's memory you used:
  21900 strings out of 493638
@@ -1201,6 +1201,6 @@ Here is how much of TeX's memory you used:
  25118 multiletter control sequences out of 15000+600000
  12623 words of font info for 78 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 54i,8n,64p,10374b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,8n,64p,10378b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on finalProject.pdf (6 pages).
